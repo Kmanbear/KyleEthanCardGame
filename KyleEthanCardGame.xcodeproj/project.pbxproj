@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		273B60FA21150B76009B631E /* myCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273B60F921150B76009B631E /* myCell.swift */; };
+		27E8EE3F212116270086CC69 /* CollectionViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E8EE3E212116270086CC69 /* CollectionViewFooter.swift */; };
 		27FC0740211224A90024C9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC073F211224A90024C9C4 /* AppDelegate.swift */; };
 		27FC0742211224A90024C9C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC0741211224A90024C9C4 /* ViewController.swift */; };
 		27FC0745211224A90024C9C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27FC0743211224A90024C9C4 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		273B60F921150B76009B631E /* myCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myCell.swift; sourceTree = "<group>"; };
+		27E8EE3E212116270086CC69 /* CollectionViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFooter.swift; sourceTree = "<group>"; };
 		27FC073C211224A90024C9C4 /* KyleEthanCardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KyleEthanCardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FC073F211224A90024C9C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27FC0741211224A90024C9C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				27FC073F211224A90024C9C4 /* AppDelegate.swift */,
 				27FC0741211224A90024C9C4 /* ViewController.swift */,
 				27FC0743211224A90024C9C4 /* Main.storyboard */,
+				27E8EE3E212116270086CC69 /* CollectionViewFooter.swift */,
 				273B60F921150B76009B631E /* myCell.swift */,
 				27FC0746211224AB0024C9C4 /* Assets.xcassets */,
 				27FC0748211224AB0024C9C4 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				27FC0742211224A90024C9C4 /* ViewController.swift in Sources */,
 				273B60FA21150B76009B631E /* myCell.swift in Sources */,
 				27FC0740211224A90024C9C4 /* AppDelegate.swift in Sources */,
+				27E8EE3F212116270086CC69 /* CollectionViewFooter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
