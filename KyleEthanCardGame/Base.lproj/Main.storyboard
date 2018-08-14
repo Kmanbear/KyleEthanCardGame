@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,52 +15,62 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KyleEthanCardGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xp5-p5-RJO">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xp5-p5-RJO">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e08-2O-d3h">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e08-2O-d3h">
                                     <size key="itemSize" width="75" height="90"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="50" height="50"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Zsm-uF-bgO" customClass="myCell" customModule="KyleEthanCardGame" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="90"/>
+                                        <rect key="frame" x="0.0" y="17.5" width="75" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="75" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aH0-8l-cJ2">
-                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aH0-8l-cJ2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCE-dS-369">
-                                                    <rect key="frame" x="0.0" y="75" width="75" height="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCE-dS-369">
+                                                    <rect key="frame" x="0.0" y="69" width="75" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <constraints>
-                                            <constraint firstItem="xCE-dS-369" firstAttribute="top" secondItem="aH0-8l-cJ2" secondAttribute="bottom" id="0Vz-tR-ayv"/>
-                                            <constraint firstAttribute="trailing" secondItem="aH0-8l-cJ2" secondAttribute="trailing" id="IaC-tL-mOa"/>
-                                            <constraint firstItem="xCE-dS-369" firstAttribute="leading" secondItem="Zsm-uF-bgO" secondAttribute="leading" id="Vnd-m0-BgQ"/>
-                                            <constraint firstItem="xCE-dS-369" firstAttribute="top" secondItem="aH0-8l-cJ2" secondAttribute="bottom" id="cjA-I4-zwb"/>
-                                            <constraint firstItem="aH0-8l-cJ2" firstAttribute="leading" secondItem="Zsm-uF-bgO" secondAttribute="leading" id="eba-qP-y8T"/>
-                                            <constraint firstAttribute="bottom" secondItem="xCE-dS-369" secondAttribute="bottom" id="fka-zP-JNQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="xCE-dS-369" secondAttribute="trailing" id="s6a-mk-tFm"/>
-                                            <constraint firstItem="aH0-8l-cJ2" firstAttribute="top" secondItem="Zsm-uF-bgO" secondAttribute="top" id="wfU-rZ-9t9"/>
-                                        </constraints>
                                         <connections>
                                             <outlet property="cardImageView" destination="aH0-8l-cJ2" id="OOc-vO-3PC"/>
+                                            <outlet property="cardLabel" destination="xCE-dS-369" id="VeQ-fW-UUc"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="collectionViewFooter" id="Xga-jX-dAd" customClass="CollectionViewFooter" customModule="KyleEthanCardGame" customModuleProvider="target">
+                                    <rect key="frame" x="75" y="0.0" width="50" height="125"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fight!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5N-ZZ-9vd">
+                                            <rect key="frame" x="4" y="52" width="44" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <connections>
+                                        <outlet property="fightingInBetweenLabel" destination="t5N-ZZ-9vd" id="OFR-E6-iFZ"/>
+                                    </connections>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="bPF-E2-aDO"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="KS1-Rr-0wD"/>
@@ -68,18 +78,15 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="xp5-p5-RJO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OFY-ix-FrL"/>
-                            <constraint firstItem="xp5-p5-RJO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PEP-fg-ibG"/>
-                            <constraint firstItem="xp5-p5-RJO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="XK7-fM-52h"/>
-                            <constraint firstItem="xp5-p5-RJO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="r06-tB-Ip7"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="firstCardCollectionView" destination="xp5-p5-RJO" id="my0-7b-X4O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="136.28185907046478" y="132"/>
         </scene>
     </scenes>
 </document>
